@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Video stream</title>
+</head>
+<body>
+  <h2>Prehravanie MP4 streamu: Martin Zigrai, 231307</h2>
+
+  <video th:width="${width}" controls th:attrappend="muted=${muted}, autoplay=${autoplay}">
+    <source th:src="${URL}" type=video/mp4>
+  </video>
+
+  <h1 th:text="${error}"></h1>
+
+  <button onclick="location.href = 'http://localhost:8080/index';" id="myButton" class="float-left submit-button" >Home</button>
+</body>
+</html>

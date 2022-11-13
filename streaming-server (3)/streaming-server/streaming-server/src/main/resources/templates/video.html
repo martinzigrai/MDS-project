@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Videjou</title>
+</head>
+<body>
+<h1>Videjou</h1>
+<video th:src="@{'/getvideo/'+${movieName}}" width="1000" height="400" controls data-dashjs-player></video>
+</body>
+</html>

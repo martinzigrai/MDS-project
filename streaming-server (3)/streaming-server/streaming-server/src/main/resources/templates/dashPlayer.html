@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaptivny stream</title>
+</head>
+<body>
+    <h2 th:text="${url}"></h2>
+
+    <video th:src="${url}" width="1000" height="400" controls data-dashjs-player></video>
+
+    <script type="text/javascript" th:src="@{/js/dash.all.debug.js}"></script>
+</body>
+</html>
